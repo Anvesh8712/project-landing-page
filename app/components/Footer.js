@@ -193,7 +193,6 @@ export default function Footer() {
             {formMessage}
           </button>
         </form>
-        <script src="Footer.js"></script>
         <Script src="/Footer.js" strategy="lazyOnload" />
       </section>
       <Box
