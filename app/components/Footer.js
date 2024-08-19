@@ -107,6 +107,7 @@ export default function Footer() {
         py: { xs: 8, sm: 10 },
         textAlign: { sm: "center", md: "left" },
       }}
+      id="footer"
     >
       <section className="contact-section">
         <div className="contact-intro">

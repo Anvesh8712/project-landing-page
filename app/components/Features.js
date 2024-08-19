@@ -18,32 +18,27 @@ import ViewQuiltRoundedIcon from "@mui/icons-material/ViewQuiltRounded";
 const items = [
   {
     icon: <ViewQuiltRoundedIcon />,
-    title: "Dashboard",
+    title: "Workout Tracking",
     description:
-      "This item could provide a snapshot of the most important metrics or data points related to the product.",
-    imageLight:
-      'url("/static/images/templates/templates-images/dash-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/dash-dark.png")',
+      "Log every workout with precision. Our workout tracker lets you monitor your exercises, sets, and reps, ensuring you stay on track with your fitness routine and progress over time.",
+    imageLight: 'url("/workout-tracker.webp")',
+    imageDark: 'url("/workout-tracker.webp")',
   },
   {
     icon: <EdgesensorHighRoundedIcon />,
-    title: "Mobile integration",
+    title: "Nutrition Tracking",
     description:
-      "This item could provide information about the mobile app version of the product.",
-    imageLight:
-      'url("/static/images/templates/templates-images/mobile-light.png")',
-    imageDark:
-      'url("/static/images/templates/templates-images/mobile-dark.png")',
+      "Easily track your daily meals and nutrients. With our nutrition tracker, you can monitor your calorie intake and macros, helping you make informed dietary decisions to reach your fitness goals.",
+    imageLight: 'url("/nutrition-tracker.webp")',
+    imageDark: 'url("/nutrition-tracker.webp")',
   },
   {
     icon: <DevicesRoundedIcon />,
-    title: "Available on all platforms",
+    title: "Dashboard to See All in One Place",
     description:
-      "This item could let users know the product is available on all platforms, such as web, mobile, and desktop.",
-    imageLight:
-      'url("/static/images/templates/templates-images/devices-light.png")',
-    imageDark:
-      'url("/static/images/templates/templates-images/devices-dark.png")',
+      "Get a holistic view of your fitness journey with our all-in-one dashboard. From workouts to nutrition, see all your progress and data in one easy-to-use interface, no matter what device you're on.",
+    imageLight: 'url("/landing-page.webp")',
+    imageDark: 'url("/landing-page.webp")',
   },
 ];
 
@@ -278,8 +273,8 @@ export default function Features() {
             <Box
               sx={{
                 m: "auto",
-                width: 420,
-                height: 500,
+                width: 200,
+                height: 450,
                 backgroundSize: "contain",
                 backgroundImage: (theme) =>
                   theme.palette.mode === "light"
