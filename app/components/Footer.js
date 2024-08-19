@@ -8,6 +8,7 @@ import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
+import Script from "next/script";
 
 import FacebookIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -82,7 +83,7 @@ export default function Footer() {
       } else if (name && email && phone && message) {
         await sendUsers(name, email, phone, message);
         setError(""); // Clear the error message
-        setFormMessage("Form submitted, thanks!")
+        setFormMessage("Form submitted, thanks!");
       } else {
         setError("Please fill in all fields");
         submitButton.disabled = false;
@@ -111,8 +112,8 @@ export default function Footer() {
         <div className="contact-intro">
           <h2 className="contact-title">Join the Waitlist!</h2>
           <p className="contact-description">
-            Fill out the form below and we'll get back to you with exciting news
-            on release date, updates, and more!
+            Fill out the form below and we&apos;ll get back to you with exciting
+            news on release date, updates, and more!
           </p>
         </div>
 
@@ -193,6 +194,7 @@ export default function Footer() {
           </button>
         </form>
         <script src="Footer.js"></script>
+        <Script src="/Footer.js" strategy="lazyOnload" />
       </section>
       <Box
         sx={{
